@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mathi — Cloud Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fafafa;
+        }
+        header {
+            padding: 4rem 2rem;
+            background: #1a1a1a;
+            color: white;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .tagline { font-size: 1.2rem; opacity: 0.8; }
+        section { padding: 3rem 2rem; }
+        h2 { font-size: 1.8rem; margin-bottom: 1.5rem; border-bottom: 2px solid #1a1a1a; padding-bottom: 0.5rem; }
+        .stage {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .stage h3 { margin-bottom: 0.5rem; }
+        .status {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .status-done { background: #d4edda; color: #155724; }
+        .status-next { background: #fff3cd; color: #856404; }
+        .stage p { color: #555; }
+        footer { text-align: center; padding: 2rem; color: #888; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Mathi</h1>
+        <p class="tagline">Cloud Engineer in training — building one app through 7 stages of AWS maturity</p>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h2>The Journey</h2>
+        <p style="margin-bottom: 1.5rem; color: #555;">
+            I am building a URL shortener app in Python, evolving it through 7 stages.
+            Each stage adds new cloud skills. This site is Stage 0.
+        </p>
+
+        <div class="stage">
+            <span class="status status-done">DONE</span>
+            <h3>Stage 0 — Portfolio Site</h3>
+            <p>S3 + CloudFront + GitHub Actions CI/CD. This website.</p>
+        </div>
+
+        <div class="stage">
+            <span class="status status-next">NEXT</span>
+            <h3>Stage 1 — Linux Host</h3>
+            <p>Python URL shortener on one EC2, provisioned by shell script, containerized with Docker, managed by systemd.</p>
+        </div>
+
+        <div class="stage">
+            <span class="status status-next">PLANNED</span>
+            <h3>Stage 2 — 3-Tier Production App</h3>
+            <p>VPC + ALB + Auto Scaling + RDS + Secrets Manager + least-privilege IAM.</p>
+        </div>
+
+        <div class="stage">
+            <span class="status status-next">PLANNED</span>
+            <h3>Stage 3 — Infrastructure Pipeline</h3>
+            <p>Terraform modules + GitHub Actions + Ansible configuration management.</p>
+        </div>
+
+        <div class="stage">
+            <span class="status status-next">PLANNED</span>
+            <h3>Stage 4 — Container Platform</h3>
+            <p>EKS (or ECS) + Prometheus + Grafana observability + zero-downtime deploys.</p>
+        </div>
+
+        <div class="stage">
+            <span class="status status-next">PLANNED</span>
+            <h3>Stage 5 — Serverless & Multi-Region DR</h3>
+            <p>Lambda + API Gateway + DynamoDB Global Tables + Route 53 failover.</p>
+        </div>
+
+        <div class="stage">
+            <span class="status status-next">PLANNED</span>
+            <h3>Stage 6 — FinOps Layer</h3>
+            <p>Automated cost anomaly detection with EventBridge + Lambda + Cost Explorer.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        Built with S3, CloudFront, and GitHub Actions.
+    </div>
+</footer>
+
+</body>
+</html>

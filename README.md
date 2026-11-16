@@ -68,7 +68,7 @@
 
 # \- CloudFront cache invalidation
 
-# \- IAM least-privilege in practice
+# \- IAM least-privilege in practice.
 
 
 
